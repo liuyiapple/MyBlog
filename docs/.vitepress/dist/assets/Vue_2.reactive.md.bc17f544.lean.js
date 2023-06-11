@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,O as l}from"./chunks/framework.37ff8a7b.js";const i=JSON.parse('{"title":"响应式原理","description":"","frontmatter":{},"headers":[],"relativePath":"Vue/2.reactive.md"}'),p={name:"Vue/2.reactive.md"},o=l("",40),e=[o];function t(c,r,y,F,D,A){return n(),a("div",null,e)}const u=s(p,[["render",t]]);export{i as __pageData,u as default};

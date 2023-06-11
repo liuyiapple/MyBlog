@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,O as o}from"./chunks/framework.37ff8a7b.js";const u=JSON.parse('{"title":"JS 的执行机制","description":"","frontmatter":{},"headers":[],"relativePath":"JS/1.eventlLoop.md"}'),r={name:"JS/1.eventlLoop.md"},p=o("",11),n=[p];function s(_,c,i,l,d,h){return t(),a("div",null,n)}const S=e(r,[["render",s]]);export{u as __pageData,S as default};
