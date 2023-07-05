@@ -43,16 +43,24 @@ export default {
         ],
       },
       {
-        text: '开发常见问题',
-        items: [{ text: '关于表单FormData', link: '/Project/FormData' }],
-      },
-      {
         text: 'Vue',
         items: [
           { text: '开篇', link: '/Vue/1.introduce.md' },
           { text: '响应式', link: '/Vue/2.reactive.md' },
         ],
       },
+      {
+        text: 'VueUse常见API',
+        items: [
+          { text: 'Why is VueUse ？', link: '/VueUse/openFile.md' },
+          { text: 'State', link: '/VueUse/State.md' },
+        ],
+      },
+      {
+        text: '开发常见问题',
+        items: [{ text: '关于表单FormData', link: '/Project/FormData' }],
+      },
+
       {
         text: '工具',
         items: [
