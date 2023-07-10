@@ -23,7 +23,22 @@ hero:
       text: View on GitHub
       link: https://github.com/liuyiapple
 features:
-  - title: '欢迎光临'
-    details: Feel the speed of Vite. Instant server start and lightning fast HMR that stays fast regardless of the app size.
-    icon: 😃
+  - title: '基础知识'
+    details: 个人开发中遇到的问题
+    icon: 🫶
+  - title: 'Bug分享'
+    details: 改到头疼的Bug
+    icon: 🤦
+  - title: '实用工具'
+    details: 前端常用的npm库
+    icon: 🧑‍🦽
+  - title: '原生开发'
+    details: 前端常用的npm库
+    icon: 🐒
+  - title: '框架源码'
+    details: 前端常用的npm库
+    icon: 😏
+  - title: '生活趣事'
+    details: 前端常用的npm库
+    icon: 🦦
 ---

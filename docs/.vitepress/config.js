@@ -30,17 +30,11 @@ export default {
     sidebar: [
       {
         text: 'HTML',
-        items: [
-          { text: '标签', link: '/Html/html' },
-          { text: '补充说明', link: '/Html/ps' },
-        ],
+        items: [{ text: '标签', link: '/Html/html' }],
       },
       {
         text: 'JavaScript',
-        items: [
-          { text: 'JS执行机制', link: '/JS/1.eventlLoop.md' },
-          { text: '补充说明', link: '/Html/ps' },
-        ],
+        items: [{ text: 'JS执行机制', link: '/JS/1.eventlLoop.md' }],
       },
       {
         text: 'Vue',
@@ -54,6 +48,7 @@ export default {
         items: [
           { text: 'Why is VueUse ？', link: '/VueUse/openFile.md' },
           { text: 'State', link: '/VueUse/State.md' },
+          { text: 'Elements', link: '/VueUse/Elements.md' },
         ],
       },
       {
@@ -70,4 +65,4 @@ export default {
       },
     ],
   },
-}
+};

@@ -1,5 +1,9 @@
 # State
 
+::: tip
+Elements 是关于 状态 的 API
+:::
+
 ## createGLobalState
 
 createGlobalState 是一个将状态保存在全局作用域中，以便于 Vue 实例使用。这里你完全可以理解成状态组件库，就跟 Vuex，pinia，mobx，redux 等等一样的状态保存库。使用起来一点也不比这些库逊色。
@@ -28,8 +32,8 @@ export const useGlobalStore = createGlobalState(() => {
   <button @click="() => increment()">+</button>
 </template>
 <script lang="ts" setup>
-import { useGlobalStore } from '@/store/index.ts'
-const { count, increment } = useGlobalStore()
+import { useGlobalStore } from '@/store/index.ts';
+const { count, increment } = useGlobalStore();
 </script>
 <style lang="less" scoped></style>
 ```
