@@ -1,6 +1,6 @@
 # Elements
 
-::: tip
+::: tip 对元素的控制
 Elements 是关于 DOM 和 浏览器 操作的一些 API
 :::
 

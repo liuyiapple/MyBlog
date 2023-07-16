@@ -9,7 +9,7 @@ hero:
   text: 写点博客给你看
   tagline: 欢迎光临.
   image:
-    src: ../static/IMG_5100.jpg
+    src: /static/IMG_5100.jpg
     alt: VitePress
   actions:
     - theme: brand
@@ -17,8 +17,8 @@ hero:
       link: /Html/html
 
     - theme: alt
-      text: 面试大全
-      link: /Html/html
+      text: 实用工具
+      link: /Tool/lodash.md
     - theme: alt
       text: View on GitHub
       link: https://github.com/liuyiapple

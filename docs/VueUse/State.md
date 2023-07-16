@@ -1,6 +1,6 @@
 # State
 
-::: tip
+::: tip 状态相关，使用场景看个人吧
 Elements 是关于 状态 的 API
 :::
 

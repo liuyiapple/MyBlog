@@ -29,6 +29,10 @@ export default {
     ],
     sidebar: [
       {
+        text: '介绍',
+        items: [{ text: '关于这里', link: '/introduce' }],
+      },
+      {
         text: 'HTML',
         items: [{ text: '标签', link: '/Html/html' }],
       },
