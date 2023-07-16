@@ -9,7 +9,7 @@ hero:
   text: 写点博客给你看
   tagline: 欢迎光临.
   image:
-    src: ./static/IMG_5100.jpg
+    src: ../static/IMG_5100.jpg
     alt: VitePress
   actions:
     - theme: brand
