@@ -52,6 +52,10 @@ export default {
         ],
       },
       {
+        text: 'Node.js',
+        items: [{ text: '基础知识', link: '/Node/Base/index.md' }],
+      },
+      {
         text: '开发常见问题',
         items: [{ text: '关于表单FormData', link: '/Project/FormData' }],
       },

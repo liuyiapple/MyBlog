@@ -9,7 +9,7 @@ hero:
   text: 写点博客给你看
   tagline: 欢迎光临.
   image:
-    src: /IMG_5100.jpg
+    src: ./static/IMG_5100.jpg
     alt: VitePress
   actions:
     - theme: brand
@@ -24,21 +24,21 @@ hero:
       link: https://github.com/liuyiapple
 features:
   - title: '基础知识'
-    details: 个人开发中遇到的问题
+    details: 不积硅步，何以致千里
     icon: 🫶
   - title: 'Bug分享'
-    details: 改到头疼的Bug
+    details: 个人开发中遇到的问题
     icon: 🤦
   - title: '实用工具'
     details: 前端常用的npm库
     icon: 🧑‍🦽
   - title: '原生开发'
-    details: 前端常用的npm库
+    details: 原生JS场景开发
     icon: 🐒
   - title: '框架源码'
-    details: 前端常用的npm库
+    details: 源码分享，解读框架原理
     icon: 😏
   - title: '生活趣事'
-    details: 前端常用的npm库
+    details: 生活趣事，记录日常点滴
     icon: 🦦
 ---
