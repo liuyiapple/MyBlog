@@ -45,6 +45,7 @@ export default {
         items: [
           { text: '开篇', link: '/Vue/1.introduce.md' },
           { text: '响应式', link: '/Vue/2.reactive.md' },
+          { text: 'v-model', link: '/Vue/3.v-model.md' },
         ],
       },
       {
