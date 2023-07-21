@@ -9,7 +9,7 @@ hero:
   text: 写点博客给你看
   tagline: 欢迎光临.
   image:
-    src: /avatar.png
+    src: '../assets/avatar.png'
   actions:
     - theme: brand
       text: 开始阅读
