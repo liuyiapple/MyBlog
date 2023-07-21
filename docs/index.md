@@ -9,7 +9,8 @@ hero:
   text: 写点博客给你看
   tagline: 欢迎光临.
   image:
-    src: '../assets/avatar.png'
+    src: '/avatar.png'
+    alt: Yao
   actions:
     - theme: brand
       text: 开始阅读
