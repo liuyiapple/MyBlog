@@ -9,8 +9,7 @@ hero:
   text: 写点博客给你看
   tagline: 欢迎光临.
   image:
-    src: /static/IMG_5100.jpg
-    alt: VitePress
+    src: /avatar.png
   actions:
     - theme: brand
       text: 开始阅读
@@ -25,7 +24,7 @@ hero:
 features:
   - title: '基础知识'
     details: 不积硅步，何以致千里
-    icon: 🫶
+    icon: 💎
   - title: 'Bug分享'
     details: 个人开发中遇到的问题
     icon: 🤦

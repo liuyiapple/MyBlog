@@ -73,5 +73,8 @@ export default {
         ],
       },
     ],
+    search: {
+      provider: 'local',
+    },
   },
 };
