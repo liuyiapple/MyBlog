@@ -45,7 +45,7 @@ export default {
     lastUpdatedText: '最后一次更新于',
     footer: {
       message: `本文档纯属个人瞎写，参考各路大神优质代码，欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a> 让更多人发现`,
-      copyright: `<a target="_blank" href="${github}/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Everyone</a>`,
+      copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Everyone</a>`,
     },
   },
 };
