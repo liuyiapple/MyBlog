@@ -38,9 +38,6 @@ export const sidebar = [
 
   {
     text: '工具',
-    items: [
-      { text: 'Lodash 你值得拥有', link: '/Tool/lodash.md' },
-      { text: '常用API', link: '/Tool/API.md' },
-    ],
+    items: [{ text: 'Lodash 你值得拥有', link: '/Tool/lodash.md' }],
   },
 ];

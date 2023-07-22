@@ -2,7 +2,6 @@ import { github } from './meta';
 import { sidebar } from './sidebar';
 export default {
   base: '/MyBlog/',
-
   themeConfig: {
     siteTitle: 'YaoDocs',
     nav: [
