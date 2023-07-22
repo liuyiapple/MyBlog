@@ -6,7 +6,7 @@ titleTemplate: 写一些博客
 
 hero:
   name: Yao的网站
-  text: 写点博客给你看
+  text: 写一些博客
   tagline: 欢迎光临.
   image:
     src: '/avatar.png'
