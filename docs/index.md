@@ -61,7 +61,7 @@ const members = [
     name: 'liuyiapple',
     title: 'continue coding....',
     links: [
-      { icon: 'github', link: 'https://github.com/HearLing' },
+      { icon: 'github', link: 'https://github.com/liuyiapple' },
       
     ]
   },
