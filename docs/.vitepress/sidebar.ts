@@ -17,7 +17,12 @@ export const sidebar = [
       { text: '开篇', link: '/Vue/1.introduce.md' },
       { text: '响应式', link: '/Vue/2.reactive.md' },
       { text: 'v-model', link: '/Vue/3.v-model.md' },
+      { text: 'computed', link: '/Vue/4.computed.md' },
     ],
+  },
+  {
+    text: '组件封装',
+    items: [{ text: 'Table', link: '/components/Button/index.md' }],
   },
   {
     text: 'VueUse常见API',

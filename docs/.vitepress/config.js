@@ -1,5 +1,8 @@
 import { github } from './meta';
 import { sidebar } from './sidebar';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 export default {
   base: '/MyBlog/',
   themeConfig: {
@@ -47,4 +50,13 @@ export default {
       copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Everyone</a>`,
     },
   },
+  plugins: [
+    // ...
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
+  ],
 };

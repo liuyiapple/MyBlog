@@ -9,6 +9,11 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
     "vitepress": "^1.0.0-alpha.73"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.8"
   }
 }
