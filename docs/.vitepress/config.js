@@ -1,3 +1,5 @@
+import { github } from './meta';
+import { sidebar } from './sidebar';
 export default {
   base: '/MyBlog/',
 
@@ -21,60 +23,29 @@ export default {
       },
       { text: 'Github', link: 'https://github.com/liuyiapple' },
     ],
+    lastUpdated: true,
     socialLinks: [
       {
         icon: 'github',
         link: 'https://github.com/liuyiapple',
       },
     ],
-    sidebar: [
-      {
-        text: '介绍',
-        items: [{ text: '关于这里', link: '/introduce' }],
-      },
-      {
-        text: 'HTML',
-        items: [{ text: '标签', link: '/Html/html' }],
-      },
-      {
-        text: 'JavaScript',
-        items: [{ text: 'JS执行机制', link: '/JS/1.eventlLoop.md' }],
-      },
-      {
-        text: 'Vue',
-        items: [
-          { text: '开篇', link: '/Vue/1.introduce.md' },
-          { text: '响应式', link: '/Vue/2.reactive.md' },
-          { text: 'v-model', link: '/Vue/3.v-model.md' },
-        ],
-      },
-      {
-        text: 'VueUse常见API',
-        items: [
-          { text: 'Why is VueUse ？', link: '/VueUse/openFile.md' },
-          { text: 'State', link: '/VueUse/State.md' },
-          { text: 'Elements', link: '/VueUse/Elements.md' },
-        ],
-      },
-      {
-        text: 'Node.js',
-        items: [{ text: '基础知识', link: '/Node/Base/index.md' }],
-      },
-      {
-        text: '开发常见问题',
-        items: [{ text: '关于表单FormData', link: '/Project/FormData' }],
-      },
-
-      {
-        text: '工具',
-        items: [
-          { text: 'Lodash 你值得拥有', link: '/Tool/lodash.md' },
-          { text: '常用API', link: '/Tool/API.md' },
-        ],
-      },
-    ],
+    sidebar: sidebar,
     search: {
       provider: 'local',
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
+    },
+    editLink: {
+      pattern: `${github}/tree/main/docs/:path`,
+      text: '在 GitHub 上编辑此页',
+    },
+    lastUpdatedText: '最后一次更新于',
+    footer: {
+      message: `本文档纯属个人瞎写，参考各路大神优质代码，欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a> 让更多人发现`,
+      copyright: `<a target="_blank" href="${github}/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Everyone</a>`,
     },
   },
 };

@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /Html/html
+      link: /introduce
 
     - theme: alt
       text: 实用工具
