@@ -1,6 +1,6 @@
 <template>
   <el-button type="primary" @click="submitHandel" :loading="loading">
-    带有Loading效果的按钮
+    Loading
   </el-button>
 </template>
 <script lang="ts" setup>

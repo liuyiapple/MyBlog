@@ -22,7 +22,10 @@ export const sidebar = [
   },
   {
     text: '组件封装',
-    items: [{ text: 'Table', link: '/components/Button/index.md' }],
+    items: [
+      { text: 'Button', link: '/components/Button/index.md' },
+      { text: 'Table', link: '/components/Table/index.md' },
+    ],
   },
   {
     text: 'VueUse常见API',
