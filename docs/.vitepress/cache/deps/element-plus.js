@@ -9821,7 +9821,7 @@ function removeGlobalNode(el) {
   el.remove();
 }
 
-// node_modules/@element-plus/icons-vue/dist/index.js
+// node_modules/element-plus/node_modules/@element-plus/icons-vue/dist/index.js
 var add_location_vue_vue_type_script_lang_default = {
   name: "AddLocation"
 };
