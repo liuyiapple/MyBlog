@@ -42,8 +42,9 @@ export const sidebar = [
   {
     text: '开发常见问题',
     items: [
-      { text: '关于表单FormData', link: '/Project/FormData' },
-      { text: 'base64格式附件下载', link: '/Project/File.md' },
+      { text: '关于表单FormData', link: '/Project/1.FormData.md' },
+      { text: 'base64格式附件下载', link: '/Project/2.File.md' },
+      { text: 'AES解密', link: '/Project/3.AES.md' },
     ],
   },
 
