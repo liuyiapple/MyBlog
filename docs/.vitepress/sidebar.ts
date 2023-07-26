@@ -25,6 +25,7 @@ export const sidebar = [
     items: [
       { text: 'Button', link: '/components/Button/index.md' },
       { text: 'Table', link: '/components/Table/index.md' },
+      { text: 'Dialog', link: '/components/Dialog/index.md' },
     ],
   },
   {
