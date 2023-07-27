@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
-    "element-plus": "^2.3.8"
+    "element-plus": "^2.3.8",
+    "less": "^4.1.3"
   }
 }
