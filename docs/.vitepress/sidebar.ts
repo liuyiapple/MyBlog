@@ -5,7 +5,10 @@ export const sidebar = [
   },
   {
     text: 'HTML',
-    items: [{ text: '标签', link: '/Html/html' }],
+    items: [
+      { text: '标签', link: '/Html/html' },
+      { text: 'Canvas', link: '/Html/Canvas/index.md' },
+    ],
   },
   {
     text: 'JavaScript',
@@ -44,8 +47,8 @@ export const sidebar = [
     text: '开发常见问题',
     items: [
       { text: '关于表单FormData', link: '/Project/1.FormData.md' },
-      { text: 'base64格式附件下载', link: '/Project/2.File.md' },
-      { text: 'AES解密', link: '/Project/3.AES.md' },
+      { text: 'Base64格式附件下载', link: '/Project/2.File.md' },
+      { text: 'Crypto-js数据加密', link: '/Project/3.AES.md' },
       { text: '大屏适配方案', link: '/Project/4.Screen.md' },
     ],
   },
