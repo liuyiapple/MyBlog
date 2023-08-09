@@ -57,4 +57,8 @@ export const sidebar = [
     text: '工具',
     items: [{ text: 'Lodash 你值得拥有', link: '/Tool/lodash.md' }],
   },
+  {
+    text: '算法',
+    items: [{ text: '日常练习', link: '/Algorithm/arithmetic.md' }],
+  },
 ];
