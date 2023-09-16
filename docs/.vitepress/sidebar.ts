@@ -33,11 +33,7 @@ export const sidebar = [
   },
   {
     text: 'VueUse常见API',
-    items: [
-      { text: 'Why is VueUse ？', link: '/VueUse/openFile.md' },
-      { text: 'State', link: '/VueUse/State.md' },
-      { text: 'Elements', link: '/VueUse/Elements.md' },
-    ],
+    items: [],
   },
   {
     text: 'Node.js',
@@ -55,7 +51,10 @@ export const sidebar = [
 
   {
     text: '工具',
-    items: [{ text: 'Lodash 你值得拥有', link: '/Tool/lodash.md' }],
+    items: [
+      { text: 'Lodash 你值得拥有', link: '/Tool/lodash.md' },
+      { text: 'VueUse', link: '/VueUse/State.md' },
+    ],
   },
   {
     text: '算法',
