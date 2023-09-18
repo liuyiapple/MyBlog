@@ -32,10 +32,6 @@ export const sidebar = [
     ],
   },
   {
-    text: 'VueUse常见API',
-    items: [],
-  },
-  {
     text: 'Node.js',
     items: [{ text: '基础知识', link: '/Node/Base/index.md' }],
   },
