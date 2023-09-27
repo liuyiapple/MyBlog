@@ -42,6 +42,7 @@ export const sidebar = [
       { text: 'Base64格式附件下载', link: '/Project/2.File.md' },
       { text: 'Crypto-js数据加密', link: '/Project/3.AES.md' },
       { text: '大屏适配方案', link: '/Project/4.Screen.md' },
+      { text: '链接转二维码', link: '/Project/5.QRCode.md' },
     ],
   },
 

@@ -16,6 +16,7 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
     "element-plus": "^2.3.8",
-    "less": "^4.2.0"
+    "less": "^4.2.0",
+    "qrcode": "^1.5.3"
   }
 }

@@ -1,32 +1,41 @@
 {
-  "hash": "e32a1004",
-  "browserHash": "d93687ab",
+  "hash": "2ce95761",
+  "browserHash": "a4b6ea73",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "903a4920",
+      "fileHash": "46dcf25f",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "aa749cf8",
+      "fileHash": "6beadbe6",
       "needsInterop": false
     },
     "@element-plus/icons-vue": {
       "src": "../../../../node_modules/@element-plus/icons-vue/dist/index.js",
       "file": "@element-plus_icons-vue.js",
-      "fileHash": "b5064ed4",
+      "fileHash": "226170d8",
       "needsInterop": false
+    },
+    "qrcode": {
+      "src": "../../../../node_modules/qrcode/lib/browser.js",
+      "file": "qrcode.js",
+      "fileHash": "50f978e3",
+      "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-KWADNB4C": {
-      "file": "chunk-KWADNB4C.js"
+    "chunk-M34SYWA6": {
+      "file": "chunk-M34SYWA6.js"
     },
-    "chunk-YJNUPD57": {
-      "file": "chunk-YJNUPD57.js"
+    "chunk-4S7LXNVO": {
+      "file": "chunk-4S7LXNVO.js"
+    },
+    "chunk-DFKQJ226": {
+      "file": "chunk-DFKQJ226.js"
     }
   }
 }
