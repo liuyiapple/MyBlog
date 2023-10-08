@@ -2,7 +2,12 @@
 
 Vue3 现如今已经非常成熟，虽然仍然会有一些小的版本更新，也是为开发者提供更好用的 API。**_Composition API_** 更是为我们的日常开发效率提高不少，随之又有很多优秀的开发者开发一些业务中常见的方法，那就是 **VueUse**。我也是第一次接触，就像之前在写 **React** 的时候，**aHooks** 这个库夜也是非常棒的。作为水平不好的我来说，只能使用大佬的封装，更快速的完成业务，也希望记录自己的学习过程，一起来看看 **VueUse** 吧。
 
-## State
+<script setup>
+import UseDraggable from "./components/useDraggable.vue"
+import UseClipboard from "./components/useClipboard.vue"
+</script>
+
+## State 状态
 
 ::: tip 状态相关，使用场景看个人吧
 Elements 是关于 状态 的 API
@@ -44,7 +49,7 @@ const { count, increment } = useGlobalStore();
 
 就是这么简单 👍
 
-## Elements
+## Elements 元素
 
 ::: tip 对元素的控制
 Elements 是关于 DOM 和 浏览器 操作的一些 API
@@ -102,3 +107,51 @@ watch(
 );
 </script>
 ```
+
+## useDraggerable
+
+一个可以拖动元素的 API
+
+```vue
+<template>
+  <div ref="el" :style="style" style="position: fixed" class="dragg-box">
+    🤘 拖动我 {{ x }}, {{ y }}
+  </div>
+</template>
+<script lang="ts" setup>
+import { reactive, toRef, ref } from 'vue';
+import { useDraggable } from '@vueuse/core';
+const el = ref<HTMLElement | null>(null);
+const { x, y, style } = useDraggable(el, {
+  initialValue: { x: 700, y: 700 }, // 元素初始位置
+});
+</script>
+```
+
+<UseDraggable/>
+
+## Browser 浏览器
+
+## useClipboard 粘贴板
+
+业务常见的一件复制功能时常出现，来看看 useClipboard 怎么搞定它
+
+```vue
+<template>
+  <div>
+    <span> 某快递单号：{{ expross }}</span>
+    <el-icon @click="copy(expross)"><CopyDocument /></el-icon>
+  </div>
+</template>
+<script lang="ts" setup>
+import { useClipboard } from '@vueuse/core';
+import { ElMessage } from 'element-plus';
+import { ref } from 'vue';
+const expross = ref('123123123');
+const { copied, copy, isSupported, text } = useClipboard();
+</script>
+```
+
+<useClipboard/>
+
+当然，上面介绍了有关

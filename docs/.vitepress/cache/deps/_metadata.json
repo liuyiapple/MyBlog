@@ -1,41 +1,47 @@
 {
-  "hash": "2ce95761",
-  "browserHash": "a4b6ea73",
+  "hash": "c884128a",
+  "browserHash": "5bea6b04",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "46dcf25f",
+      "fileHash": "d9cf3072",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "6beadbe6",
+      "fileHash": "0fba0daa",
       "needsInterop": false
     },
     "@element-plus/icons-vue": {
       "src": "../../../../node_modules/@element-plus/icons-vue/dist/index.js",
       "file": "@element-plus_icons-vue.js",
-      "fileHash": "226170d8",
+      "fileHash": "46b8765a",
       "needsInterop": false
     },
-    "qrcode": {
-      "src": "../../../../node_modules/qrcode/lib/browser.js",
-      "file": "qrcode.js",
-      "fileHash": "50f978e3",
-      "needsInterop": true
+    "@documate/vue": {
+      "src": "../../../../node_modules/@documate/vue/dist/documate.js",
+      "file": "@documate_vue.js",
+      "fileHash": "d5a523d1",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "276fe2a0",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-M34SYWA6": {
-      "file": "chunk-M34SYWA6.js"
+    "chunk-6NMAXBHK": {
+      "file": "chunk-6NMAXBHK.js"
     },
-    "chunk-4S7LXNVO": {
-      "file": "chunk-4S7LXNVO.js"
+    "chunk-KWADNB4C": {
+      "file": "chunk-KWADNB4C.js"
     },
-    "chunk-DFKQJ226": {
-      "file": "chunk-DFKQJ226.js"
+    "chunk-YJNUPD57": {
+      "file": "chunk-YJNUPD57.js"
     }
   }
 }

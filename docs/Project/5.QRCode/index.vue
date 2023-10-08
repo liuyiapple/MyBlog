@@ -17,12 +17,16 @@ const showQrCode = async (
   title: string | undefined = '访问链接'
 ) => {
   const ImgCode = await qrcode.toDataURL(url);
-  ElMessageBox.alert(`<img src="${ImgCode}" alt=${alt} />`, title, {
-    dangerouslyUseHTMLString: true,
-    showConfirmButton: false,
-    showCancelButton: false,
-    center: true,
-  });
+  ElMessageBox.alert(
+    `<img src="${ImgCode}" alt=${alt} style="display: flex; justify-content: center"/>`,
+    title,
+    {
+      center: true,
+      dangerouslyUseHTMLString: true,
+      showConfirmButton: false,
+      showCancelButton: false,
+    }
+  );
 };
 const showCodeHandle = () => {
   if (!codeURL.value) return ElMessage.error('请输入参数');
@@ -38,7 +42,9 @@ const showCodeHandle = () => {
 .input_content {
   margin-bottom: 40px;
 }
-:deep(.el-message-box) {
-  width: 0;
+:deep(.el-message-box__container) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

@@ -6,14 +6,17 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --host",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "documate:upload": "documate upload"
   },
   "devDependencies": {
+    "@documate/documate": "^0.2.1",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.1",
     "vitepress": "^1.0.0-alpha.73"
   },
   "dependencies": {
+    "@documate/vue": "^0.3.1",
     "@element-plus/icons-vue": "^2.1.0",
     "element-plus": "^2.3.8",
     "less": "^4.2.0",
