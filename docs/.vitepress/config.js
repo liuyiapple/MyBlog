@@ -23,6 +23,15 @@ export default {
           { text: 'React', link: '/react' },
         ],
       },
+      {
+        text: 'MySql',
+        items: [
+          {
+            text: 'DDL基础',
+            link: '/MySql/index.md',
+          },
+        ],
+      },
       { text: 'Github', link: 'https://github.com/liuyiapple' },
     ],
     lastUpdated: true,
