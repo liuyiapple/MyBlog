@@ -154,4 +154,6 @@ const { copied, copy, isSupported, text } = useClipboard();
 
 <useClipboard/>
 
-当然，上面介绍了有关
+## useColorMode
+
+useColorMode 是一个当前页面颜色的 Hook，在默认情况下
