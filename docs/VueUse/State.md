@@ -5,6 +5,7 @@ Vue3 现如今已经非常成熟，虽然仍然会有一些小的版本更新，
 <script setup>
 import UseDraggable from "./components/useDraggable.vue"
 import UseClipboard from "./components/useClipboard.vue"
+import UseColorMode from "./components/useColorMode.vue"
 </script>
 
 ## State 状态
@@ -156,4 +157,23 @@ const { copied, copy, isSupported, text } = useClipboard();
 
 ## useColorMode
 
-useColorMode 是一个当前页面颜色的 Hook，在默认情况下
+具有自动数据持久性的响应式暗黑模式
+
+```vue
+<template>
+  <el-switch @click="switchHandle" v-model="switchValue"></el-switch>
+</template>
+<script lang="ts" setup>
+import { useDark, useToggle } from '@vueuse/core';
+import { ref } from 'vue';
+const switchValue = ref(false);
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+const switchHandle = () => {
+  toggleDark();
+};
+</script>
+<style lang="less" scoped></style>
+```
+
+<UseColorMode/>
