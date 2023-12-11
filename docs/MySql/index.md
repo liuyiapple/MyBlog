@@ -1,6 +1,6 @@
-# MySql
+# MySql 表结构操作
 
-## DDL 表结构创建操作
+## DDL
 
 ```sql
 
@@ -27,7 +27,7 @@ CREATE TABLE tb_user (
 | 默认约束 | 保存数据时如果未指定，则采用默认数据           | DEFAULT                      |
 | 外建约束 | 让两张表数据建立连接，保证数据的一致性和完整性 | foreign key                  |
 
-## 常见的数据类习惯
+### 常见的数据类习惯
 
 主要为三种数据类型 数值类型、字符串类型、日期时间类型
 
@@ -52,4 +52,29 @@ CREATE TABLE tb_user (
   RENAME TABLE 被修改的表名称 to 表名称
   -- 删除表
   DROP TABLE IF EXISTS 表名称;
+```
+
+## DML
+
+```sql
+-- 插入数据
+
+-- 单个插入
+   -- 注意事项，插入的主键和值要一一对应
+INSERT INTO 表名称 (字段1,字段2,字段3,...) VALUES (值1,值2,值3,...);
+-- 多个插入
+   -- 插入的字段要符合字段的长度和大小
+INSERT INTO 表名称 VALUES (值1,值2,值3,...),(值1,值2,值3,...),(值1,值2,值3,...);
+
+
+-- 修改数据
+  -- 在更新数据时，若表中字段含有update_time字段，应该一同更新 update_time = now()
+UPDATE 表名称 SET 字段1=值1,字段2=值2,... WHERE 条件;
+  -- 更新表中字段所有数据 就不需要 WHERE 条件
+UPDATE 表名称 SET 字段1=值1,字段2=值2,...;
+
+-- 删除数据
+DELETE FROM 表名称 WHERE 条件
+  -- 删除表中所有数据 就不需要 WHERE 条件
+DELETE FROM 表名称;
 ```

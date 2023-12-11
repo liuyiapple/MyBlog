@@ -14,7 +14,7 @@ export const navBar = [
     text: 'MySql',
     items: [
       {
-        text: 'DDL基础',
+        text: '表结构操作',
         link: '/MySql/index.md',
       },
     ],
