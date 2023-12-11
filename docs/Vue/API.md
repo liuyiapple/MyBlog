@@ -1,4 +1,6 @@
-# v-model
+# API
+
+## v-model
 
 双向绑定 v-model 可以说是 Vue 的核心，那什么时候需要用到 v-model 呢
 
@@ -7,7 +9,7 @@
   - 实现双向绑定
   - 单相向据流
 
-## 为什是双向绑定，却是单向数据流呢？
+#### 为什是双向绑定，却是单向数据流呢？
 
 尽管 Vue 使用的是 MVVM（M：模型，V：视图，MV：视图模型） 的架构模式，然而，v-model 并不是真正的双向绑定，Vue 只是实现了“单向数据流”的机制来模拟双向绑定，这也就意味着数据从模型（数据对象）流向视图（DOM），但并不直接从视图流回模型。
 
@@ -15,7 +17,7 @@
 
 单向数据流的设计有助于保持数据的一致性和可追踪性，可以使得数据流动的路径更为明确。
 
-## 使用场景
+#### 使用场景
 
 - 表单提交（input，textarea，checkbox）
 - 组件共享参数，一个或多个
@@ -23,7 +25,7 @@
 - 原理
   先实现一个简单的 v-model
 
-## 使用案例
+#### 使用案例
 
 ```vue
 <template>
@@ -94,5 +96,32 @@ const childrenChange = () => {
 - 修饰符
   - 常用的修饰符 .trim .number
   - 当然也可以自定义，这里就不赘述了
+
+## computet 计算属性
+
+日常开发中，当组件中的某一个数据需要依赖于其他数据的改变进行改变时，计算属性便是非常好的选择,我们看一个实例
+
+```vue
+<template>
+  <div>
+    <div>{{ isTrue }}</div>
+  </div>
+</template>
+<script lang="ts" setup>
+import { computed, ref } from 'vue';
+const arr = ref([1, 2, 3]);
+
+const isTrue = computed(() => {
+  return arr.length > 0 ? 'true' : 'false';
+});
+</script>
+<style lang="less" scoped></style>
+```
+
+<script lang='ts' setup>
+import ComputedComponent from "./4-computed/index.vue"
+
+</script>
+<ComputedComponent/>
 
 写到这里，如果读者认为文中有哪里时错误的，或者有任何欠妥，也非常欢迎联系我，或者吐槽我，我会加深学习，并继续更正

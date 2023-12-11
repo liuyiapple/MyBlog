@@ -1,5 +1,6 @@
 import { github } from './meta';
 import { sidebar } from './sidebar';
+import { navBar } from './navbar';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
@@ -7,33 +8,7 @@ export default {
   base: '/MyBlog/',
   themeConfig: {
     siteTitle: 'YaoDocs',
-    nav: [
-      {
-        text: '基础学习',
-        items: [
-          { text: 'HTML', link: '/Html/html' },
-          { text: 'CSS', link: '/CSS/css' },
-          { text: 'JavaScript', link: '/JS/js' },
-        ],
-      },
-      {
-        text: '前端脚手架',
-        items: [
-          { text: 'Vue', link: '/Vue/1.introduce.md' },
-          { text: 'React', link: '/react' },
-        ],
-      },
-      {
-        text: 'MySql',
-        items: [
-          {
-            text: 'DDL基础',
-            link: '/MySql/index.md',
-          },
-        ],
-      },
-      { text: 'Github', link: 'https://github.com/liuyiapple' },
-    ],
+    nav: navBar,
     lastUpdated: true,
     socialLinks: [
       {

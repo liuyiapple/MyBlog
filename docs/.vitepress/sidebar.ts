@@ -4,13 +4,6 @@ export const sidebar = [
     items: [{ text: '关于这里', link: '/introduce' }],
   },
   {
-    text: 'HTML',
-    items: [
-      { text: '标签', link: '/Html/html' },
-      { text: 'Canvas', link: '/Html/Canvas/index.md' },
-    ],
-  },
-  {
     text: 'JavaScript',
     items: [{ text: 'JS执行机制', link: '/JS/1.eventlLoop.md' }],
   },
@@ -19,8 +12,7 @@ export const sidebar = [
     items: [
       { text: '开篇', link: '/Vue/1.introduce.md' },
       { text: '响应式', link: '/Vue/2.reactive.md' },
-      { text: 'v-model', link: '/Vue/3.v-model.md' },
-      { text: 'computed', link: '/Vue/4.computed.md' },
+      { text: 'API', link: '/Vue/API.md' },
     ],
   },
   {
