@@ -78,3 +78,68 @@ DELETE FROM 表名称 WHERE 条件
   -- 删除表中所有数据 就不需要 WHERE 条件
 DELETE FROM 表名称;
 ```
+
+## DQL
+
+### 基础查询
+
+```sql
+  -- 字段查询
+  SELECT 字段1,字段2,... FROM 表名称
+  -- 查询表中所有字段
+  SELECT * FROM 表名称
+  -- 设置别名
+  SELECT 字段1 别名,字段2 别名,... FROM 表名称
+  -- 去重查询
+  SELECT DISTINCT 字段1,字段2,... FROM 表名称
+
+```
+
+### 条件查询
+
+```sql
+-- 条件查询语句
+SELECT 字段名称 FROM 表名称 WHERE 条件语句
+```
+
+| 比较运算符          | 功能                                         |
+| ------------------- | -------------------------------------------- |
+| >                   | 大于                                         |
+| >=                  | 大于等于                                     |
+| <                   | 小于                                         |
+| <=                  | 小于等于                                     |
+| =                   | 等于                                         |
+| <> 或 !=            | 不等于                                       |
+| between ... and ... | 在某个范围之内（含最小，最大值）             |
+| in(...)             | 在 in 之后的别表中的值，多选一               |
+| like 占位符         | 模糊匹配（\_匹配单个字符，% 匹配任意个字符） |
+| is null             | 是 null                                      |
+
+### 逻辑运算符
+
+| 逻辑运算符 | 功能 |
+| ---------- | ---- |
+| and 或 &&  | 与   |
+| or 或 \|\| | 或   |
+| not 或 !   | 非   |
+
+```sql
+
+select * from tb_emp where username='张三二';
+
+select * from tb_emp where id<5;
+
+select * from tb_emp where job is null;
+
+select * from tb_emp where password != 123456 || password is null;
+
+select * from tb_emp where job is not null;
+
+select * from tb_emp where job =1 || job =2;
+
+select  * from tb_emp where job in (2,3);
+
+select * from tb_emp where username like '___';
+
+select * from tb_emp where username like '张%'
+```
