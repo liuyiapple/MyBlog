@@ -143,3 +143,73 @@ select * from tb_emp where username like '___';
 
 select * from tb_emp where username like '张%'
 ```
+
+### DQL-分组查询
+
+聚合函数 null 值不参与运算
+
+| 函数  | 功能 |
+| ----- | ---- |
+| max   | 最大 |
+| min   | 最小 |
+| sum   | 求和 |
+| avg   | 平均 |
+| count | 计数 |
+
+```sql
+SELECT 字段列表 FROM 表名称 GROUP BY 分组字段
+
+SELECT 字段列表 FROM 表名称[WHERE 条件] GROUP BY 分组字段 HAVING 分组条件
+```
+
+WHERE 和 HAVING 的区别
+
+1. 执行的时机不同，where 在分组之前进行过滤，不满足 where 条件，不参与分组，而 having 是在分组之后对结果进行过滤
+
+2. 判断条件不同，where 不能对聚合函数进行判断，而 having 可以对聚合函数进行判断
+
+### DQL-排序查询
+
+```sql
+SELECT 字段列表 FROM 表名称 [WHERE 条件列表][GROUP BY 分组字段] ORDER BY 字段1 [ASC|DESC],字段2 [ASC|DESC],...
+```
+
+ASC 升序 DESC 降序
+
+### DQL-分页查询
+
+```sql
+
+SELECT 字段名 FROM 表名称 LIMIT 开始位置,查询条数
+
+-- 注意事项
+  -- 起始索引从0开始，起始索引 = （查询页码 - 1） * 每页显示条数
+  -- 分页查询事数据库的方言，不同的数据库有不同的实现，MYSQL中事LIMIT
+  -- 如果查询的事第一页的数据，起始索引可以省略。直接简化为limit 10
+
+```
+
+```sql
+
+-- 函数
+
+  - if(表达式,tvalue,fvalue) 表达式为true 取tvalue，否则取fvalue
+  - case 表达式
+    when value1 then result1
+    when value2 then result2
+    ...
+    else result
+    end
+
+ -- 案例
+select if(gender= 1,'男性','女性')  性别,count(*) from tb_emp group by gender;
+
+select case job
+           when 1 then '班主任'
+           when 2 then '讲师'
+           when 3 then '学生主管'
+           when 4 then '校验主管'
+           else '未分配' end as 身份, count(*)
+from tb_emp
+group by job;
+```
