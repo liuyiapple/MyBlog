@@ -205,11 +205,130 @@ SELECT 字段名 FROM 表名称 LIMIT 开始位置,查询条数
 select if(gender= 1,'男性','女性')  性别,count(*) from tb_emp group by gender;
 
 select case job
-           when 1 then '班主任'
-           when 2 then '讲师'
-           when 3 then '学生主管'
-           when 4 then '校验主管'
-           else '未分配' end as 身份, count(*)
+    when 1 then '班主任'
+    when 2 then '讲师'
+    when 3 then '学生主管'
+    when 4 then '校验主管'
+    else '未分配' end as 身份, count(*)
 from tb_emp
 group by job;
+```
+
+## 表结构设计
+
+```sql
+ create table 表名称 (
+  字段名 数据类型,
+  [constraint 约束名称] foreign key (字段名) references 主表名称(主表字段名)
+ )
+
+
+ -- 表完成后
+ alter table 表名称 add constraint 约束名称 foreign key （字段名） references 主比奥名称
+
+
+ alter table tp_emp add constraint tp_emp___fk_dept_id foreign key (dept_id) references dept (id);
+
+```
+
+物理外健
+
+### 一对多
+
+- 概念 使用 foreign key 定于物理外键关联另外一张表
+- 缺点
+  1. 影响增删查的效率
+  2. 仅用与单节点数据库，不适合分布式集群长江
+  3. 容易引发数据库死锁，消耗性能
+
+逻辑外键
+
+- 概念 在业务逻辑上解决外建关联
+- 通过逻辑外建 就可以很方便的解决上述问题
+
+### 一对一
+
+- 案例 ： 用户 与 身份证信息的 关系。
+
+- 关系 ：一对一的关系，用于单表拆分将一个表的基础字段放在一张表里，娶她字段放在另外一张表中，以提升操作效率
+
+```sql
+create table tb_user (
+    id int unsigned unique primary key auto_increment comment "ID",
+    name varchar(10) not null comment "姓名",
+    gender tinyint unsigned not null comment "1 男 2 女",
+    phone char(11) comment "手机号",
+    degree varchar(10) comment "学历"
+) comment "用户信息";
+
+insert into tb_user (id, name, gender, phone, degree)
+values (1, '张三', 1, 13222222222, '代转'),
+       (2, '张四', 1, 13222222222, '代转'),
+       (3, '张五', 1, 13222222222, '代转'),
+       (4, '张六', 1, 13222222222, '代转');
+
+create table tb_user_card (
+    id int unsigned  primary key auto_increment comment "ID",
+    nationality varchar(10) not null comment "民族",
+    id_card char(18) not null comment "身份证号码",
+    issued varchar(20) not null  comment "签发机关",
+    user_id  int unsigned  not null unique comment "ID",
+    constraint fk_user_id foreign key (user_id) references tb_user(id)
+) comment "身份信息";
+
+insert into tb_user_card
+values
+    (1,'汉','123456789123456701','西安',1),
+    (2,'汉','123456789123456702','西安',2),
+    (3,'汉','123456789123456703','西安',3),
+    (4,'汉','123456789123456704','西安',4);
+
+
+```
+
+### 多对多
+
+- 案例 ： 学生与课程的关系
+- 关系 ： 一个学生 可以选修多个课程，一个课程可以被多个学生选修
+- 实现 ： 建立第三张表中间表，中间表至少包含两个外建，分别关联两张表的主键
+
+### 总结
+
+- 一对多 在多的一方添加外建，关联另外一方的主键
+- 一对一 在任意一方，关联另外一方的主键
+- 多对多 通过中间表的两个外建，分别关联另外两张表的主键
+
+## 多表查询
+
+- 链接查询
+- 内连接，相当于查询 A，B 交集的部门数据
+
+```sql
+-- 隐式内链接
+SELECT 字段列表 FROM 表1 别名1,表2 别名2 WHERE 连接条件
+
+select dept.name,tp_emp.name from tp_emp,dept where  tp_emp.dept_id = dept.id;
+
+-- 显示内链接
+SELECT 字段列表 FROM 表1 别名1 INNER JOIN 表2 别名2 ON 连接条件
+
+select tp_emp.name,dept.name from tp_emp inner join dept on tp_emp.dept_id = dept.id
+
+select e.name,d.name from tp_emp e,dept d join d.dept_id = e.id
+```
+
+- 外连接
+- 左外连接：查询 左表所有数据（包括两张表交集部分数据）
+- 右外连接：查询 右表所有数据（包括两张表交集部分数据）
+
+```sql
+
+左 select 字段列表 from 表1 left [outer] join 表2 on 连接条件;
+
+select e.name,d.name from tp_emp e left join dept d on e.dept_id = d.id;
+
+右 select 字段列表 from 表1 right [outer] join 表2 on 连接条件;
+
+select e.name,d.name from tp_emp e right join dept d on d.id = e.dept_id
+
 ```
