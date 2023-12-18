@@ -332,3 +332,132 @@ select e.name,d.name from tp_emp e left join dept d on e.dept_id = d.id;
 select e.name,d.name from tp_emp e right join dept d on d.id = e.dept_id
 
 ```
+
+## 子查询
+
+- sql 语句中嵌套 select 语句，成为嵌套查询，又称子查询
+
+- 形式
+
+```sql
+select * from t1 where column1 = (select colum1 from t2)
+```
+
+- 子查询外语的语句可以是 insert / update / delete / select 的任何一个，最常见的是 select
+
+- 分类
+
+1.  标量子查询 ：子查询返回的结果为单个值
+
+- 子查询返回的结果是单个值（数字，字符串，日期等），最简单的形式
+- 常用的操作符 =、 <>、 > 、>=、 < 、<=
+
+```sql
+select * from tp_emp where dept_id = (select id from dept where name='咨询部');
+```
+
+2.  列子查询 ： 子查询返回的结果是一列
+
+- 子查询返回的结果是一列
+- 常用的操作符 in 、not in 等
+
+```sql
+select * from tp_emp where dept_id in ( select id from dept where name = '教研部' or name = '咨询部')
+```
+
+3.  行子查询 ：子查询返回的结果为多行多咧
+
+- 子查询返回的结果是一行
+- 常用的操作符： = 、<> 、in、 not in
+
+```sql
+select * from tp_emp where (entry_date, job) = (select entry_date, job from tp_emp where name = '小红');
+
+```
+
+4. 表子查询
+
+- 子查询返回的结果是多行多列、常作为临时表
+- 常用的操作符：in
+
+```sql
+select e.*,d.name from (select * from tp_emp where entry_date > '2020-01-01') e,dept d where e.dept_id = d.id
+```
+
+## 事务
+
+**_事务_**是一组操作的集合，它是一个不可分割的工作单位，事务会把所有的操作作为一个整体一起向系统提交操作请求，即使是这些操作**_要么同时成功，要么同时失败_**
+
+- 场景
+  删除 部门 以及部门下的员工
+
+```sql
+delete from dept where id=2;
+delete from tp_emp where dept_id = 2;
+```
+
+事务控制
+
+```sql
+-- 开启事务
+start transaction;/ begin;
+
+-- 提交事务
+commit;
+
+-- 回滚事务
+rollback;
+```
+
+### 事务四大特性
+
+- 原子性
+  事务是不可分割的最小单元，要么全部成功，要么全部失败
+- 一致性
+  事务完成时，必须使所有的数据都保持一致的状态
+- 隔离性
+  数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行
+- 持久性
+  事务一旦提交或回滚，他对数据库中的数据的改变就是永久的
+
+## 索引
+
+- 索引 是帮助数据库 **_高效获取数据_**的数据结构
+- 创建索引
+
+```sql
+create index 索引名 on 表名（字段名）
+```
+
+- 查看索引
+
+```sql
+  show index from 表名称
+```
+
+- 删除索引
+
+```sql
+drop index 索引名 from 表名
+```
+
+```sql
+create index idx_emp_name on tp_emp(name);
+show index from tp_emp;
+drop index idx_emp_name on tp_emp
+
+```
+
+- 优点
+
+  1. 提高数据查询的效率，降低数据库的 IO 成本
+  2. 通过索引列对数据进行排序，降低数据排序的成本，降低 CPU 消耗
+
+- 缺点
+  1. 索引会占用存储空间
+  2. 索引大大提高了查询效率。同时也降低了 insert、 update、 delete 的效率
+
+### 注意事项
+
+- 主键字段，在建表时，会自动创建主键索引
+- 添加唯一约束时，数据库实际上会添加唯一索引
