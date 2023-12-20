@@ -25,7 +25,7 @@ export const sidebar = [
   },
   {
     text: 'Node.js',
-    items: [{ text: '基础知识', link: '/Node/Base/index.md' }],
+    items: [{ text: '基础内置模块', link: '/Node/Base/index.md' }],
   },
   {
     text: '开发常见问题',
