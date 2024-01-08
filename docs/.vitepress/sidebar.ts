@@ -18,14 +18,17 @@ export const sidebar = [
   {
     text: '组件封装',
     items: [
-      { text: 'Button', link: '/components/Button/index.md' },
       { text: 'Table', link: '/components/Table/index.md' },
       { text: 'Dialog', link: '/components/Dialog/index.md' },
     ],
   },
   {
-    text: 'Node.js',
-    items: [{ text: '基础内置模块', link: '/Node/Base/index.md' }],
+    text: '服务端',
+    items: [
+      { text: 'Node基础内置模块', link: '/Node/Base/index.md' },
+      { text: 'MySql', link: '/MySql/index.md' },
+      { text: 'MyBatis', link: '/MyBatis/1.MyBatis.md' },
+    ],
   },
   {
     text: '开发常见问题',
@@ -35,6 +38,7 @@ export const sidebar = [
       { text: 'Crypto-js数据加密', link: '/Project/3.AES.md' },
       { text: '大屏适配方案', link: '/Project/4.Screen.md' },
       { text: '链接转二维码', link: '/Project/5.QRCode.md' },
+      { text: 'Tree 结构', link: '/Project/6.Tree.md' },
     ],
   },
 
