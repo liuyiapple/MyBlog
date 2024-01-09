@@ -26,8 +26,8 @@ export const sidebar = [
     text: '服务端',
     items: [
       { text: 'Node基础内置模块', link: '/Node/Base/index.md' },
-      { text: 'MySql', link: '/MySql/index.md' },
-      { text: 'MyBatis', link: '/MyBatis/1.MyBatis.md' },
+      { text: 'MySql学习笔记', link: '/MySql/index.md' },
+      { text: 'MyBatis学习笔记', link: '/MyBatis/1.MyBatis.md' },
     ],
   },
   {
