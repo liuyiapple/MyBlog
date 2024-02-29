@@ -39,6 +39,8 @@ export const sidebar = [
       { text: '大屏适配方案', link: '/Project/4.Screen.md' },
       { text: '链接转二维码', link: '/Project/5.QRCode.md' },
       { text: 'Tree 结构', link: '/Project/6.Tree.md' },
+      { text: '浏览器拍照', link: '/Project/7.faceId.md' },
+      { text: '爱心', link: '/Animation/love.md' },
     ],
   },
 
