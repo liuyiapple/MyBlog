@@ -1,38 +1,79 @@
 {
-  "hash": "8260ddad",
-  "browserHash": "fd062a0b",
+  "hash": "a4b62941",
+  "configHash": "a6f40a11",
+  "lockfileHash": "9464a6d0",
+  "browserHash": "d903adbe",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "e010a9aa",
+      "fileHash": "defafcda",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "c21d041c",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "73c3a9ed",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "b61b569e",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "444b7d46",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../../node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "46ff2664",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "1d1c9b50",
+      "fileHash": "17941e02",
       "needsInterop": false
     },
     "@element-plus/icons-vue": {
       "src": "../../../../node_modules/@element-plus/icons-vue/dist/index.js",
       "file": "@element-plus_icons-vue.js",
-      "fileHash": "e19ae7b6",
+      "fileHash": "1bab0a2b",
       "needsInterop": false
     },
     "@documate/vue": {
       "src": "../../../../node_modules/@documate/vue/dist/documate.js",
       "file": "@documate_vue.js",
-      "fileHash": "8894cc1b",
+      "fileHash": "1d59fa9f",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-C3B2ZCAX": {
-      "file": "chunk-C3B2ZCAX.js"
+    "chunk-MF3AZ72D": {
+      "file": "chunk-MF3AZ72D.js"
     },
-    "chunk-PXPXJQG3": {
-      "file": "chunk-PXPXJQG3.js"
+    "chunk-O3YQPVDG": {
+      "file": "chunk-O3YQPVDG.js"
+    },
+    "chunk-L3NOAG3M": {
+      "file": "chunk-L3NOAG3M.js"
+    },
+    "chunk-TDGGAN2Y": {
+      "file": "chunk-TDGGAN2Y.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
     }
   }
 }

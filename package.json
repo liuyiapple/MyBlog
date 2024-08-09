@@ -13,7 +13,7 @@
     "@documate/documate": "^0.2.1",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.1",
-    "vitepress": "^1.0.0-alpha.73"
+    "vitepress": "^1.0.0"
   },
   "dependencies": {
     "@documate/vue": "^0.3.1",

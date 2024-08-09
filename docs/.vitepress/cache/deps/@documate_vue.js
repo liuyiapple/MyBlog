@@ -34,7 +34,8 @@ import {
   withCtx,
   withDirectives,
   withKeys
-} from "./chunk-PXPXJQG3.js";
+} from "./chunk-TDGGAN2Y.js";
+import "./chunk-5WRI5ZAA.js";
 
 // node_modules/@documate/vue/dist/documate.js
 function pe(t, e, ...n) {
@@ -42807,7 +42808,7 @@ function eZ() {
     return pi;
   O_ = 1;
   function t(e) {
-    const n = e.regex, r = /[\p{XID_Start}_]\p{XID_Continue}*/u, a = [
+    const n = e.regex, r = new RegExp("[\\p{XID_Start}_]\\p{XID_Continue}*", "u"), a = [
       "and",
       "as",
       "assert",
