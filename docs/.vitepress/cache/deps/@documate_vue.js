@@ -34,7 +34,7 @@ import {
   withCtx,
   withDirectives,
   withKeys
-} from "./chunk-YJNUPD57.js";
+} from "./chunk-PXPXJQG3.js";
 
 // node_modules/@documate/vue/dist/documate.js
 function pe(t, e, ...n) {
@@ -8204,7 +8204,7 @@ var Gs = (t = {}) => {
   const e = { children: [] };
   return Object.assign(e, t), e;
 };
-var ko = class {
+var ko = class _ko {
   constructor() {
     this.rootNode = Gs(), this.stack = [this.rootNode];
   }
@@ -8253,7 +8253,7 @@ var ko = class {
    */
   static _collapse(e) {
     typeof e != "string" && e.children && (e.children.every((n) => typeof n == "string") ? e.children = [e.children.join("")] : e.children.forEach((n) => {
-      ko._collapse(n);
+      _ko._collapse(n);
     }));
   }
 };
