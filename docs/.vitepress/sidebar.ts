@@ -40,6 +40,7 @@ export const sidebar = [
       { text: '链接转二维码', link: '/Project/5.QRCode.md' },
       { text: 'Tree 结构', link: '/Project/6.Tree.md' },
       { text: '浏览器拍照', link: '/Project/7.faceId.md' },
+      { text: '前端PDF', link: '/Project/8.eltopdf.md' },
     ],
   },
 
