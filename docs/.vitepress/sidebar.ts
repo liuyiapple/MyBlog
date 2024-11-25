@@ -41,6 +41,7 @@ export const sidebar = [
       { text: 'Tree 结构', link: '/Project/6.Tree.md' },
       { text: '浏览器拍照', link: '/Project/7.faceId.md' },
       { text: '前端PDF', link: '/Project/8.eltopdf.md' },
+      { text: '性能优化之图片预加载',link:'/Project/9.imageload.md' },
     ],
   },
 
