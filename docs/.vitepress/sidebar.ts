@@ -10,7 +10,6 @@ export const sidebar = [
   {
     text: 'Vue',
     items: [
-      { text: '开篇', link: '/Vue/1.introduce.md' },
       { text: '响应式', link: '/Vue/2.reactive.md' },
       { text: 'API', link: '/Vue/API.md' },
     ],
@@ -41,14 +40,16 @@ export const sidebar = [
       { text: 'Tree 结构', link: '/Project/6.Tree.md' },
       { text: '浏览器拍照', link: '/Project/7.faceId.md' },
       { text: '前端PDF', link: '/Project/8.eltopdf.md' },
-      { text: '性能优化之图片预加载',link:'/Project/9.imageload.md' },
+      { text: '性能优化之图片预加载', link: '/Project/9.imageload.md' },
+      { text: 'EventSource', link: '/Project/10.AI.md' },
+      { text: '阿里语音识别', link: '/Project/11.voice.md' },
     ],
   },
 
   {
     text: '工具',
     items: [
-      { text: 'Lodash 你值得拥有', link: '/Tool/lodash.md' },
+      { text: 'Lodash', link: '/Tool/lodash.md' },
       { text: 'VueUse', link: '/VueUse/State.md' },
     ],
   },
